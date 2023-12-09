@@ -39,7 +39,7 @@ function NavBar() {
             boxSize="50px"
             alt="daliondev"
           />
-          <Link href="/">
+          <Link href="/" prefetch={false}>
             <Heading size="md">
               <Flex color="#fb8500">
                 <Text color={titleColor}>Dalion</Text>
@@ -53,10 +53,10 @@ function NavBar() {
 
       <Box display={{ sm: "inherit", base: "none" }}>
         <ButtonGroup>
-          <Link href="/works">
+          <Link href="/works" prefetch={false}>
             <Button>Works</Button>
           </Link>
-          <Link href="/about">
+          <Link href="/about" prefetch={false}>
             <Button>About</Button>
           </Link>
 
@@ -110,16 +110,29 @@ function NavBar() {
           />
 
           <MenuList color="white" bg="#353434">
-            <MenuItem as={Link} href="/works" bg="transparent" mb="2">
+            <MenuItem
+              as={Link}
+              href="/works"
+              bg="transparent"
+              mb="2"
+              prefetch={false}
+            >
               Works
             </MenuItem>
-            <MenuItem as={Link} href="/about" bg="transparent" mb="2">
+            <MenuItem
+              as={Link}
+              href="/about"
+              bg="transparent"
+              mb="2"
+              prefetch={false}
+            >
               About
             </MenuItem>
             <MenuItem
               as={Link}
               href="https://github.com/daliondev"
               bg="transparent"
+              prefetch={false}
             >
               <Flex alignItems="center" gap="2">
                 Source
