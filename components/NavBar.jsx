@@ -6,7 +6,6 @@ import {
   Box,
   Spacer,
   Heading,
-  ButtonGroup,
   Button,
   Text,
   useColorMode,
@@ -17,6 +16,7 @@ import {
   MenuItem,
   useColorModeValue,
   Image,
+  Stack,
 } from "@chakra-ui/react"
 
 // Icons
@@ -52,12 +52,12 @@ function NavBar() {
       <Spacer />
 
       <Box display={{ sm: "inherit", base: "none" }}>
-        <ButtonGroup>
+        <Stack>
           <Link href="/works" prefetch={false}>
-            <Button>Works</Button>
+            Works
           </Link>
           <Link href="/about" prefetch={false}>
-            <Button>About</Button>
+            About
           </Link>
 
           <Button>
@@ -68,7 +68,7 @@ function NavBar() {
               </Flex>
             </Link>
           </Button>
-        </ButtonGroup>
+        </Stack>
         <Spacer />
         <Button
           onClick={toggleColorMode}
