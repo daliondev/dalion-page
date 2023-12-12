@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "dalion.dev",
+  title: "Dalion",
 }
 
 const HomePage = () => <h1>Hello World!!</h1>

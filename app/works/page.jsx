@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Works - Daliondev",
+  title: "Works - Dalion",
 }
 
 function Works() {
